@@ -1,1 +1,1 @@
-NEW README file
+NEW README file, intro into node.js and JS
