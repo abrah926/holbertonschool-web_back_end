@@ -1,4 +1,5 @@
-module.exports = {
+// eslintrc.js (ES module syntax)
+export default {
     env: {
       browser: false,
       es6: true,
@@ -28,12 +29,11 @@ module.exports = {
         'WithStatement',
       ],
     },
-    overrides:[
+    overrides: [
       {
         files: ['*.js'],
         excludedFiles: 'babel.config.js',
-      }
-    ]
+      },
+    ],
   };
-  
   

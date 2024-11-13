@@ -1,8 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "test": "jest",
-    "lint": "eslint ."
+    "dev": "node run-files.js"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
