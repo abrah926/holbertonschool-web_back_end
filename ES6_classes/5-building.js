@@ -22,3 +22,13 @@ export default class Building {
         throw new Error('Class extending Building must override evacuationWarningMessage');
     }
 }
+
+class TestBuilding extends Building {
+    constructor(sqft) {
+        super(sqft);
+    }
+
+    evacuationWarningMessage() {
+        return 'Class extending Building did override';
+    }
+}
