@@ -23,12 +23,3 @@ export default class Building {
     }
 }
 
-class TestBuilding extends Building {
-    constructor(sqft) {
-        super(sqft);
-    }
-
-    evacuationWarningMessage() {
-        return 'Class extending Building did override';
-    }
-}
