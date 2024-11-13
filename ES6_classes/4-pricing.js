@@ -1,4 +1,5 @@
-import Currency from "./3-currency";
+import Currency from './3-currency.js';
+
 
 
 class Pricing {
@@ -49,3 +50,5 @@ class Pricing {
     }
 
 }
+
+export default Pricing;
