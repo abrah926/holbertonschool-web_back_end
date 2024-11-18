@@ -1,4 +1,4 @@
-export default getStudentsByLocation(student, city) {
+export default function getStudentsByLocation(student, city) {
     if (!Array.isArray(student)) {
         throw new Error("Invalid input: student must be an array");
     }
