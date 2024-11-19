@@ -1,6 +1,10 @@
 export default function cleanSet (set, startString) {
-    if (!String) {
+    if (!startString) {
         return '';}
+
+    if (typeof set !== 'string') {
+        return '';
+    }
 
     const result = [];
 
