@@ -1,6 +1,4 @@
-export default function hasValuesFromArray (arr){
-    const newSet = new Set(arr);
-    if (arr.length === newSet.length) {return true;}
-    return false;
+export default function hasValuesFromArray (set,arr){
+    return arr.every((value) => set.has(value));
 
 }
