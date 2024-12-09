@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+'''Module imports async comprehension to be
+used with measur runtime in order to
+return full time of execution'''
 from time import perf_counter
 import asyncio
 async_comprehension = __import__('1-async_comprehension').async_comprehension
