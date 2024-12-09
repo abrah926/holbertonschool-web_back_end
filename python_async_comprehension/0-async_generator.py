@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-'''0-assyn_generator.py iterates to provide a random number generator'''
+'''0-async_generator.py iterates to provide a random number generator'''
 
 import random
 import asyncio
