@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
+'''Random Delay Utility Module
 
+This module provides a utility
+for asynchronous programming
+with a function
+that introduces a
+random delay. It is designed
+to simulate variable response
+times or delays in asynchronous workflows.'''
 import random
 import asyncio
 
