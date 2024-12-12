@@ -1,0 +1,11 @@
+[0;1;32m●[0m mongod.service - MongoDB Database Server
+     Loaded: loaded (/lib/systemd/system/mongod.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Thu 2024-12-12 10:44:23 AST; 8s ago
+       Docs: https://docs.mongodb.org/manual
+   Main PID: 23498 (mongod)
+     Memory: 65.5M
+     CGroup: /system.slice/mongod.service
+             └─23498 /usr/bin/mongod --config /etc/mongod.conf
+
+dic 12 10:44:23 abrah926-ThinkBook-15-G2-ITL systemd[1]: Started MongoDB Database Server.
+dic 12 10:44:23 abrah926-ThinkBook-15-G2-ITL mongod[23498]: {"t":{"$date":"2024-12-12T14:44:23.599Z"},"s":"I",  "c":"CONTROL",  "id":7484500, "ctx":"main","msg":"Environment variable MONGODB_CONFIG_OVERRIDE_NOFORK == 1, overriding \"processManagement.fork\" to false"}
