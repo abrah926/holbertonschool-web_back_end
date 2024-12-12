@@ -38,10 +38,13 @@ class Server:
             List[List]: The dataset loaded from the CSV file.
         """
         if self.__dataset is None:
-            with open(self.DATA_FILE) as f:
-                reader = csv.reader(f)
-                dataset = [row for row in reader]
-            self.__dataset = dataset[1:]  # Skip header row
+            try:
+                with open(self.DATA_FILE, 'r', encoding='utf-8') as f:
+                    reader = csv.reader(f)
+                    dataset = [row for row in reader]
+                self.__dataset = dataset[1:]  # Skip header row
+            except FileNotFoundError:
+                self.__dataset = []  # Return empty dataset if file is missing
 
         return self.__dataset
 
