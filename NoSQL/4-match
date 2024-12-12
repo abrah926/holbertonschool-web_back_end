@@ -1,0 +1,2 @@
+//Find a Document by Criteria in db + collection
+db.school.find({name: "Holberton school"}).forEach(printjson)
