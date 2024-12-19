@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from pymongo.collection import Collection
 from typing import List
 
