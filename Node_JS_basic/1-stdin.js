@@ -1,22 +1,30 @@
-// Import readline module to handle user input
 const readline = require('readline');
 
-// Create an interface to read input from stdin (command line)
+// Create readline interface
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-// Display initial prompt message
-rl.question('Welcome to Holberton School, what is your name?\n', (name) => {
-  // Display the name entered by the user
-  console.log(`Your name is: ${name}`);
+// Display the prompt if the input is from the terminal (TTY)
+console.log('Welcome to Holberton School, what is your name?');
 
-  // Close the program with a final message
-  rl.on('close', () => {
-    console.log('This important software is now closing');
+// Check if the input is from the terminal
+if (process.stdin.isTTY) {
+  rl.question('', (name) => {
+    console.log(`Your name is: ${name}`);
+    rl.close();
   });
+} else {
+  // If input is piped, we just read the data and skip the question
+  process.stdin.on('data', (data) => {
+    const name = data.toString().trim();
+    console.log(`Your name is: ${name}`);
+    rl.close();
+  });
+}
 
-  // Close the readline interface to end the program
-  rl.close();
+// Display the closing message
+rl.on('close', () => {
+  console.log('This important software is now closing');
 });
