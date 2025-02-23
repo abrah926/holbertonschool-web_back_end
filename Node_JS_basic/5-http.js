@@ -1,7 +1,6 @@
 const http = require('http');
 const fs = require('fs');
 
-
 const databaseFile = process.argv[2]; // Get the database file from command-line arguments
 
 // Function to count students from the CSV file
